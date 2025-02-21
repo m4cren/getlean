@@ -3,7 +3,7 @@ import style from './About.module.scss';
 const About = () => {
     return (
         <div className={style['main']}>
-            <img src="../../../public/images/about.png" alt="" />
+            <img src="/images/about.png" alt="" />
             <div>
                 <h1>Push your limits achieve greatness through fitness</h1>
                 <p>

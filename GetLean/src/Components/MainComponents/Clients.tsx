@@ -12,23 +12,20 @@ const Clients = () => {
     return (
         <div className={style['main']}>
             <img
-                src="../../../public/images/overlay3.png"
+                src="/images/overlay3.png"
                 alt=""
                 className={style['overlay']}
             />
             <div className={style['main-container']}>
                 <div className={style['img-container']}>
                     {selectedImage === 0 ? (
-                        <img
-                            src="../../../public/images/calisthenics.jpg"
-                            alt=""
-                        />
+                        <img src="/images/calisthenics.jpg" alt="" />
                     ) : selectedImage === 1 ? (
-                        <img src="../../../public/images/leg.jpg" alt="" />
+                        <img src="/images/leg.jpg" alt="" />
                     ) : selectedImage === 2 ? (
-                        <img src="../../../public/images/pushday.jpg" alt="" />
+                        <img src="/images/pushday.jpg" alt="" />
                     ) : selectedImage === 3 ? (
-                        <img src="../../../public/images/pullday.jpg" alt="" />
+                        <img src="/images/pullday.jpg" alt="" />
                     ) : (
                         <p>NOne</p>
                     )}

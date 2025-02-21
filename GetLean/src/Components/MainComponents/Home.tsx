@@ -15,18 +15,18 @@ const Home = () => {
             </div>
             <div className={style.hero}>
                 <img
-                    src="./../../../public/images/hero.png"
+                    src="/images/hero.png"
                     alt=""
                     className={style['hero-desktop']}
                 />
                 <img
-                    src="./../../../public/images/phone_background.png"
+                    src="/images/phone_background.png"
                     alt=""
                     className={style['phone-hero']}
                 />
             </div>
             <img
-                src="./../../../public/images/overlay1.png"
+                src="/images/overlay1.png"
                 alt=""
                 className={style['overlay']}
             />

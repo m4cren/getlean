@@ -14,13 +14,13 @@ const Programs = () => {
             <div className={style['container-desktop']}>
                 <div className={style['line']}>
                     <Card
-                        imgLink="../../../public/images/cat.jpg"
+                        imgLink="/images/cat.jpg"
                         target={['fef']}
                         title="Program"
                         content="lorem lorem"
                     />
                     <Card
-                        imgLink="../../../public/images/cheetah.jpg"
+                        imgLink="/images/cheetah.jpg"
                         target={['fef', 'scs']}
                         title="Program"
                         content="blah"
@@ -28,13 +28,13 @@ const Programs = () => {
                 </div>
                 <div className={style['line']}>
                     <Card
-                        imgLink="../../../public/images/gorilla.jpg"
+                        imgLink="/images/gorilla.jpg"
                         target={['fef', 'scs']}
                         title="Program"
                         content="blah"
                     />
                     <Card
-                        imgLink="../../../public/images/cat.jpg"
+                        imgLink="/images/cat.jpg"
                         target={['fef', 'scs']}
                         title="Program"
                         content="blah"
