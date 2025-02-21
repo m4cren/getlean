@@ -1,0 +1,114 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: center;
+    overflow-x: hidden;
+
+    @media (max-width: 1350px) {
+        width: 80%;
+    }
+    @media (max-width: 1025px) {
+        width: 100%;
+    }
+    @media (max-width: 450px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    position: relative;
+
+    @media (max-width: 1025px) {
+        padding-top: 10rem;
+        width: 80%;
+    }
+
+    @media (max-width: 450px) {
+        width: 90%;
+    }
+}
+.content p {
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.786);
+    font-size: 1rem;
+    @media (max-width: 450px) {
+        display: none;
+    }
+}
+.content h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+
+    @media (max-width: 450px) {
+        font-size: clamp(2.1rem, 1.2rem, 1.3rem);
+        text-align: center;
+        padding-top: 1rem;
+    }
+}
+.hero {
+    width: 100%;
+
+    @media (max-width: 1025px) {
+        position: absolute;
+        opacity: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    @media (max-width: 450px) {
+        position: absolute;
+        opacity: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+.hero img {
+    width: 100%;
+}
+
+.phone-hero {
+    display: none;
+
+    @media (max-width: 1025px) {
+        display: block;
+    }
+}
+
+@media (max-width: 1025px) {
+    .hero-desktop {
+        display: none;
+    }
+}
+
+.overlay {
+    position: absolute;
+    opacity: 25%;
+    transform: translate(-30rem, 10rem);
+    @media (max-width: 1025px) {
+        width: 100vw;
+
+        transform: translate(-8rem, 3rem);
+    }
+
+    @media (max-width: 450px) {
+        width: 100vw;
+
+        transform: translate(-4rem, 5rem);
+    }
+}

@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'SFPRODISPLAY';
+    src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('./assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF')
+        format('truetype');
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+
+    @media (max-width: 450px) {
+        scroll-snap-type: y proximity;
+    }
+}
+
+* {
+    font-family: 'SFPRODISPLAY';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    background: url('../public/images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media (max-width: 450px) {
+        background: url('../public/images/background_phone.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+body::-webkit-scrollbar {
+    width: 0;
+}
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+    z-index: 999;
+
+    @media (max-width: 450px) {
+        margin: 0;
+    }
+}
+main {
+    margin-top: 4rem;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+
+    @media (max-width: 450px) {
+        width: 100%;
+    }
+}
+
+main section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    height: 100%;
+}
+
+#programs {
+    display: flex;
+    perspective: 1000px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-phone {
+    display: none;
+
+    @media (max-width: 450px) {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
