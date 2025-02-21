@@ -23,11 +23,10 @@ $primaryColor: #ffffff8d;
 .container-phone {
     display: none;
     @media (max-width: 900px) {
-        height: 100%;
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        height: 50%;
+        height: 65%;
 
         .line-phone {
             flex-grow: 1;
@@ -46,49 +45,6 @@ $primaryColor: #ffffff8d;
 
     @media (max-width: 450px) {
         gap: 1rem;
-    }
-}
-
-.program-content {
-    display: none;
-
-    @media (max-width: 900px) {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 0.5rem;
-        background: linear-gradient(#0f0f0f, #171717);
-        width: 80vw;
-        height: fit-content;
-        padding: 2rem;
-        box-shadow: -0.3rem 0.3rem 5px #171717;
-        gap: 1rem;
-
-        .head {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            position: relative;
-            justify-content: center;
-            border-bottom: 3px solid #232323;
-            padding-bottom: 1rem;
-            button {
-                position: absolute;
-                left: 0;
-                background-color: transparent;
-                color: white;
-                border: white;
-                font-size: 1.6rem;
-            }
-        }
-        p {
-            font-size: 0.9rem;
-            text-align: justify;
-            color: $primaryColor;
-        }
     }
 }
 

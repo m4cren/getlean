@@ -2,7 +2,8 @@ import { useState } from 'react';
 import Card from './Card';
 import CardPhone from './CardPhone';
 import style from './Programs.module.scss';
-import { FaArrowLeft } from 'react-icons/fa6';
+import ProgramCardPhone from './ProgramCardPhone';
+
 const Programs = () => {
     const [isProgramOne, setIsProgramOne] = useState<boolean>(false);
     const [isProgramTwo, setProgramTwo] = useState<boolean>(false);
@@ -16,13 +17,13 @@ const Programs = () => {
                     <Card
                         imgLink="/images/cat.jpg"
                         target={['fef']}
-                        title="Program"
+                        title="Program 1"
                         content="lorem lorem"
                     />
                     <Card
                         imgLink="/images/cheetah.jpg"
                         target={['fef', 'scs']}
-                        title="Program"
+                        title="Program 2"
                         content="blah"
                     />
                 </div>
@@ -30,13 +31,13 @@ const Programs = () => {
                     <Card
                         imgLink="/images/gorilla.jpg"
                         target={['fef', 'scs']}
-                        title="Program"
+                        title="Program 3"
                         content="blah"
                     />
                     <Card
                         imgLink="/images/cat.jpg"
                         target={['fef', 'scs']}
-                        title="Program"
+                        title="Program 4"
                         content="blah"
                     />
                 </div>
@@ -52,7 +53,11 @@ const Programs = () => {
                                 setIsProgramOne(true);
                             }}
                         >
-                            <CardPhone />
+                            <CardPhone
+                                imgLink="/images/cat.jpg"
+                                title="Program 1"
+                                content="lorem lorem"
+                            />
                         </div>
                         <div
                             className="card-phone-container"
@@ -61,7 +66,11 @@ const Programs = () => {
                                 setProgramTwo(true);
                             }}
                         >
-                            <CardPhone />
+                            <CardPhone
+                                imgLink="/images/cheetah.jpg"
+                                title="Program 2"
+                                content="lorem lorem"
+                            />
                         </div>
                     </div>
                     <div className={style['line-phone']}>
@@ -72,7 +81,11 @@ const Programs = () => {
                                 setProgramThree(true);
                             }}
                         >
-                            <CardPhone />
+                            <CardPhone
+                                imgLink="/images/gorilla.jpg"
+                                title="Program 3"
+                                content="lorem lorem"
+                            />
                         </div>
                         <div
                             className="card-phone-container"
@@ -81,107 +94,59 @@ const Programs = () => {
                                 setProgramFour(true);
                             }}
                         >
-                            <CardPhone />
+                            <CardPhone
+                                imgLink="/images/cat.jpg"
+                                title="Program 4"
+                                content="lorem lorem"
+                            />
                         </div>
                     </div>
                 </div>
             )}
 
             {isProgramOne && (
-                <div className={style['program-content']}>
-                    <div className={style['head']}>
-                        <button
-                            onClick={() => {
-                                setProgramFour(false);
-                                setProgramThree(false);
-                                setProgramTwo(false);
-                                setIsProgramOne(false);
-                                setIsCard(true);
-                            }}
-                        >
-                            <FaArrowLeft />
-                        </button>
-                        <h1>Title Program 1</h1>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsa amet doloribus fuga quo iste dolor odit commodi
-                        natus suscipit quis, ex nisi rerum facilis dolores
-                        eveniet dolorum ducimus maiores delectus!
-                    </p>
-                </div>
+                <ProgramCardPhone
+                    title="Program 1"
+                    content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet doloribus fuga quo iste dolor odit commodi natus suscipit quis, ex nisi rerum facilis dolores eveniet dolorum ducimus maiores delectus!"
+                    setIsCard={setIsCard}
+                    setProgramFour={setProgramFour}
+                    setIsProgramOne={setIsProgramOne}
+                    setProgramThree={setProgramThree}
+                    setProgramTwo={setProgramTwo}
+                />
             )}
             {isProgramTwo && (
-                <div className={style['program-content']}>
-                    <div className={style['head']}>
-                        <button
-                            onClick={() => {
-                                setProgramFour(false);
-                                setProgramThree(false);
-                                setProgramTwo(false);
-                                setIsProgramOne(false);
-                                setIsCard(true);
-                            }}
-                        >
-                            <FaArrowLeft />
-                        </button>
-                        <h1>Title Program 2</h1>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsa amet doloribus fuga quo iste dolor odit commodi
-                        natus suscipit quis, ex nisi rerum facilis dolores
-                        eveniet dolorum ducimus maiores delectus!
-                    </p>
-                </div>
+                <ProgramCardPhone
+                    title="Program 2"
+                    content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet doloribus fuga quo iste dolor odit commodi natus suscipit quis, ex nisi rerum facilis dolores eveniet dolorum ducimus maiores delectus!"
+                    setIsCard={setIsCard}
+                    setProgramFour={setProgramFour}
+                    setIsProgramOne={setIsProgramOne}
+                    setProgramThree={setProgramThree}
+                    setProgramTwo={setProgramTwo}
+                />
             )}
             {isProgramThree && (
-                <div className={style['program-content']}>
-                    <div className={style['head']}>
-                        <button
-                            onClick={() => {
-                                setProgramFour(false);
-                                setProgramThree(false);
-                                setProgramTwo(false);
-                                setIsProgramOne(false);
-                                setIsCard(true);
-                            }}
-                        >
-                            <FaArrowLeft />
-                        </button>
-                        <h1>Title Program 3</h1>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsa amet doloribus fuga quo iste dolor odit commodi
-                        natus suscipit quis, ex nisi rerum facilis dolores
-                        eveniet dolorum ducimus maiores delectus!
-                    </p>
-                </div>
+                <ProgramCardPhone
+                    title="Program 3"
+                    content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet doloribus fuga quo iste dolor odit commodi natus suscipit quis, ex nisi rerum facilis dolores eveniet dolorum ducimus maiores delectus!"
+                    setIsCard={setIsCard}
+                    setProgramFour={setProgramFour}
+                    setIsProgramOne={setIsProgramOne}
+                    setProgramThree={setProgramThree}
+                    setProgramTwo={setProgramTwo}
+                />
             )}
             {isProgramFour && (
-                <div className={style['program-content']}>
-                    <div className={style['head']}>
-                        <button
-                            onClick={() => {
-                                setProgramFour(false);
-                                setProgramThree(false);
-                                setProgramTwo(false);
-                                setIsProgramOne(false);
-                                setIsCard(true);
-                            }}
-                        >
-                            <FaArrowLeft />
-                        </button>
-                        <h1>Title Program 4</h1>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsa amet doloribus fuga quo iste dolor odit commodi
-                        natus suscipit quis, ex nisi rerum facilis dolores
-                        eveniet dolorum ducimus maiores delectus!
-                    </p>
-                </div>
+                <ProgramCardPhone
+                    title="Program 4"
+                    content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet doloribus fuga quo iste dolor odit commodi natus suscipit quis, ex nisi rerum facilis dolores eveniet dolorum ducimus maiores delectus!"
+                    setIsCard={setIsCard}
+                    setProgramFour={setProgramFour}
+                    setIsProgramOne={setIsProgramOne}
+                    setProgramThree={setProgramThree}
+                    setProgramTwo={setProgramTwo}
+                />
             )}
         </>
     );
