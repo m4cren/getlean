@@ -29,4 +29,14 @@
     height: max-content;
     border-radius: 0.5rem;
     box-shadow: -0.15rem 0.15rem 6px #313131;
+
+    @media (max-width: 900px) {
+        width: 18rem;
+    }
+    @media (max-width: 500px) {
+        width: 38vw;
+    }
+    @media (max-width: 400px) {
+        width: 35vw;
+    }
 }

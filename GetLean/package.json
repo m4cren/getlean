@@ -11,6 +11,7 @@
         "start": "react-scripts start"
     },
     "dependencies": {
+        "@emailjs/browser": "^4.4.1",
         "@vitejs/plugin-react": "^4.3.4",
         "bootstrap": "^5.3.3",
         "react": "^19.0.0",
