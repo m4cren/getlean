@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className={style.main}>
             <div className={style.content}>
-                <h1>Your Partner in Fitness</h1>
+                <h1>Be Fit, Be Healthy</h1>
                 <p className={style['caption']}>
                     Ciao! Welcome to my website! I'm Rovict Danielle, a
                     dedicated personal fitness trainer committed helping you
