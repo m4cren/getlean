@@ -11,7 +11,11 @@
     z-index: 20;
 
     @media (max-width: 400px) {
-        height: 4.5rem;
+        height: 3.75rem;
+    }
+
+    @media (max-width: 400px) {
+        height: 4.6rem;
     }
 
     button {
