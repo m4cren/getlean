@@ -1,7 +1,7 @@
 $primaryColor: #ffffff8d;
 .container-desktop {
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 
@@ -22,7 +22,9 @@ $primaryColor: #ffffff8d;
 
 .container-phone {
     display: none;
+
     @media (max-width: 900px) {
+        height: 100%;
         display: flex;
         flex-direction: column;
 

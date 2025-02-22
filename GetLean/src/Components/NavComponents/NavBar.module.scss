@@ -23,6 +23,10 @@ $primaryColor: #ffffff1d;
         border-radius: 0;
         padding: 1.5vh 1.8rem;
     }
+    @media (max-width: 400px) {
+        border-radius: 0;
+        padding: 1.5vh 1.5rem;
+    }
 }
 
 .phone-toggle {

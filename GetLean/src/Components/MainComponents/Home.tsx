@@ -9,13 +9,20 @@ const Home = () => {
             <div className={style.content}>
                 <h1>Your Trusted Personal Trainier</h1>
                 <p className={style['caption']}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quas doloribus nulla tenetur non aut, illo dolorum ipsa
-                    consequatur fugiat. Eum inventore laudantium assumenda vero
-                    similique, cupiditate ut consectetur! Praesentium,
-                    quibusdam.
+                    Ciao! Welcome to my website! I'm Rovict Danielle, a
+                    dedicated personal fitness trainer committed helping you
+                    your health and fitness goal. Whether you're looking to
+                    build strength, lose weight, or improve overall welness, I
+                    provide personalized training programs tailored to your
+                    needs. Let's take your fitness journey to the next level,
+                    start today!
                 </p>
+                <p className={style['caption-phone']}>
+                    Look good & feel good, train with coach victtt!
+                </p>
+
                 <ul>
+                    <div className={style['animate-this']}></div>
                     <li
                         onClick={() => {
                             window.open(

@@ -2,23 +2,20 @@ import style from './Card.module.scss';
 
 interface Props {
     imgLink: string;
-    target: string[];
+
     title: string;
     content: string;
+    caption: string;
 }
-const Card = ({ imgLink, title, content, target }: Props) => {
+const Card = ({ imgLink, title, content, caption }: Props) => {
     return (
         <main className={style['card-container']}>
             <div className={style['front-face']}>
                 <div className={style['front-face-content']}>
                     <img src={imgLink} alt="" />
                     <h2>{title}</h2>
-                    <div className={style['target-muscle']}>
-                        {target.map((x, index) => (
-                            <li key={index}>{x}</li>
-                        ))}
-                    </div>
-                    <p>Avail now</p>
+
+                    <p>{caption}</p>
                 </div>
             </div>
             <div className={style['back-face']}>

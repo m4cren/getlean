@@ -7,7 +7,7 @@ const Clients = () => {
     const [selectedImage, setSelectedImage] = useState<number>(0);
 
     let reverse_style = selectedImage === 0 ? 'restricted' : 'not-restricted';
-    let next_style = selectedImage === 3 ? 'restricted' : 'not-restricted';
+    let next_style = selectedImage === 1 ? 'restricted' : 'not-restricted';
 
     return (
         <div className={style['main']}>
@@ -19,36 +19,22 @@ const Clients = () => {
             <div className={style['main-container']}>
                 <div className={style['img-container']}>
                     {selectedImage === 0 ? (
-                        <img src="/images/calisthenics.jpg" alt="" />
+                        <img src="/images/client_sample.jpg" alt="" />
                     ) : selectedImage === 1 ? (
-                        <img src="/images/leg.jpg" alt="" />
-                    ) : selectedImage === 2 ? (
-                        <img src="/images/pushday.jpg" alt="" />
-                    ) : selectedImage === 3 ? (
-                        <img src="/images/pullday.jpg" alt="" />
+                        <img src="/images/client_sample2.jpg" alt="" />
                     ) : (
                         <p>NOne</p>
                     )}
                 </div>
                 {selectedImage === 0 ? (
                     <div className={style['description']}>
-                        <h1>Client 1</h1>
-                        <p>Client 1's description</p>
+                        <h1>Rainier Reyes</h1>
+                        <p>3 months transformation</p>
                     </div>
                 ) : selectedImage === 1 ? (
                     <div className={style['description']}>
-                        <h1>Client 2</h1>
-                        <p>Client 2's description</p>
-                    </div>
-                ) : selectedImage === 2 ? (
-                    <div className={style['description']}>
-                        <h1>Client 3</h1>
-                        <p>Client 3's description</p>
-                    </div>
-                ) : selectedImage === 3 ? (
-                    <div className={style['description']}>
-                        <h1>Client 4</h1>
-                        <p>Client 4's description</p>
+                        <h1>Mico Adao</h1>
+                        <p>11 months transformation</p>
                     </div>
                 ) : (
                     <p>NOne</p>
@@ -72,27 +58,9 @@ const Clients = () => {
                     <ul>
                         <li className={style['selected']}></li>
                         <li></li>
-                        <li></li>
-                        <li></li>
                     </ul>
                 ) : selectedImage === 1 ? (
                     <ul>
-                        <li></li>
-                        <li className={style['selected']}></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                ) : selectedImage === 2 ? (
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li className={style['selected']}></li>
-                        <li></li>
-                    </ul>
-                ) : selectedImage === 3 ? (
-                    <ul>
-                        <li></li>
-                        <li></li>
                         <li></li>
                         <li className={style['selected']}></li>
                     </ul>
@@ -102,8 +70,8 @@ const Clients = () => {
 
                 <button
                     onClick={() => {
-                        if (selectedImage == 3) {
-                            setSelectedImage(3);
+                        if (selectedImage == 1) {
+                            setSelectedImage(1);
                         } else {
                             setSelectedImage((prev) => prev + 1);
                         }

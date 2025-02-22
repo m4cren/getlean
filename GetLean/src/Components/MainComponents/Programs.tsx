@@ -16,29 +16,29 @@ const Programs = () => {
                 <div className={style['line']}>
                     <Card
                         imgLink="/images/cat.jpg"
-                        target={['fef']}
-                        title="Program 1"
-                        content="lorem lorem"
+                        title="Project Cat"
+                        content="This training plan will help you achieve a well-proportioned, aesthetically appealing body shape. Want a model physique? This work-out is for you. (Recommended for girls)"
+                        caption='Dm "cat" to avail '
                     />
                     <Card
                         imgLink="/images/cheetah.jpg"
-                        target={['fef', 'scs']}
-                        title="Program 2"
-                        content="blah"
+                        title="Project Cheetah"
+                        caption='Dm "cheetah" to avail '
+                        content="A training methodology that combines different types of fitness disciplines such as strength training, endurance training, and mobility work, to develop a well-rounded athletic ability. The goal is to achieve lean physique and to improve multiple physical attributes simultaneously rather than specializing in just one. Think you can do it all? Hybrid training is for you."
                     />
                 </div>
                 <div className={style['line']}>
                     <Card
                         imgLink="/images/gorilla.jpg"
-                        target={['fef', 'scs']}
-                        title="Program 3"
-                        content="blah"
+                        title="Project Gorilla"
+                        caption='Dm "cheetah" to avail '
+                        content="A workout that is focused on building strength and muscle mass, it’s made for those who want to be huge and strong. (I recommend this for those who want to be massive.) "
                     />
                     <Card
-                        imgLink="/images/cat.jpg"
-                        target={['fef', 'scs']}
-                        title="Program 4"
-                        content="blah"
+                        imgLink="/images/monkey.jpg"
+                        title="Project Monkey"
+                        caption='Dm "monkey" to avail '
+                        content="It is a full training plan that only requires you to use your bodyweight in order to gain muscle, strength, endurance, and flexibility. (This training is for those who can’t or doesn’t want to go to the gym.) "
                     />
                 </div>
             </div>
@@ -55,8 +55,8 @@ const Programs = () => {
                         >
                             <CardPhone
                                 imgLink="/images/cat.jpg"
-                                title="Program 1"
-                                content="lorem lorem"
+                                title="Project Cat"
+                                caption='Dm "cat" to avail '
                             />
                         </div>
                         <div
@@ -68,8 +68,8 @@ const Programs = () => {
                         >
                             <CardPhone
                                 imgLink="/images/cheetah.jpg"
-                                title="Program 2"
-                                content="lorem lorem"
+                                title="Project Cheetah"
+                                caption='Dm "cheetah" to avail '
                             />
                         </div>
                     </div>
@@ -83,8 +83,8 @@ const Programs = () => {
                         >
                             <CardPhone
                                 imgLink="/images/gorilla.jpg"
-                                title="Program 3"
-                                content="lorem lorem"
+                                title="Project Gorilla"
+                                caption='Dm "cheetah" to avail '
                             />
                         </div>
                         <div
@@ -95,9 +95,9 @@ const Programs = () => {
                             }}
                         >
                             <CardPhone
-                                imgLink="/images/cat.jpg"
-                                title="Program 4"
-                                content="lorem lorem"
+                                imgLink="/images/monkey.jpg"
+                                title="Project Monkey"
+                                caption='Dm "monkey" to avail '
                             />
                         </div>
                     </div>
@@ -106,8 +106,8 @@ const Programs = () => {
 
             {isProgramOne && (
                 <ProgramCardPhone
-                    title="Program 1"
-                    content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet doloribus fuga quo iste dolor odit commodi natus suscipit quis, ex nisi rerum facilis dolores eveniet dolorum ducimus maiores delectus!"
+                    title="Project Cat"
+                    content="This training plan will help you achieve a well-proportioned, aesthetically appealing body shape. Want a model physique? This work-out is for you. (Recommended for girls)"
                     setIsCard={setIsCard}
                     setProgramFour={setProgramFour}
                     setIsProgramOne={setIsProgramOne}
@@ -117,8 +117,8 @@ const Programs = () => {
             )}
             {isProgramTwo && (
                 <ProgramCardPhone
-                    title="Program 2"
-                    content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet doloribus fuga quo iste dolor odit commodi natus suscipit quis, ex nisi rerum facilis dolores eveniet dolorum ducimus maiores delectus!"
+                    title="Project Cheetah"
+                    content="A training methodology that combines different types of fitness disciplines such as strength training, endurance training, and mobility work, to develop a well-rounded athletic ability. The goal is to achieve lean physique and to improve multiple physical attributes simultaneously rather than specializing in just one. Think you can do it all? Hybrid training is for you."
                     setIsCard={setIsCard}
                     setProgramFour={setProgramFour}
                     setIsProgramOne={setIsProgramOne}
@@ -128,8 +128,8 @@ const Programs = () => {
             )}
             {isProgramThree && (
                 <ProgramCardPhone
-                    title="Program 3"
-                    content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet doloribus fuga quo iste dolor odit commodi natus suscipit quis, ex nisi rerum facilis dolores eveniet dolorum ducimus maiores delectus!"
+                    title="Project Gorilla"
+                    content="A workout that is focused on building strength and muscle mass, it’s made for those who want to be huge and strong. (I recommend this for those who want to be massive.) "
                     setIsCard={setIsCard}
                     setProgramFour={setProgramFour}
                     setIsProgramOne={setIsProgramOne}
@@ -139,8 +139,8 @@ const Programs = () => {
             )}
             {isProgramFour && (
                 <ProgramCardPhone
-                    title="Program 4"
-                    content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet doloribus fuga quo iste dolor odit commodi natus suscipit quis, ex nisi rerum facilis dolores eveniet dolorum ducimus maiores delectus!"
+                    title="Project Monkey"
+                    content="It is a full training plan that only requires you to use your bodyweight in order to gain muscle, strength, endurance, and flexibility. (This training is for those who can’t or doesn’t want to go to the gym.) "
                     setIsCard={setIsCard}
                     setProgramFour={setProgramFour}
                     setIsProgramOne={setIsProgramOne}

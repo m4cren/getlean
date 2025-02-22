@@ -41,11 +41,10 @@ const NavBar = ({
 
         emailjs
             .sendForm(
-                'service_5teavkq',
-                'template_9rrq4c8',
+                'service_nqt8ych',
+                'template_chf2vzc',
                 form.current!,
-
-                'sKd511wfI1JIdhcqo'
+                'eJlgYIa4kspBOrunu'
             )
             .then(
                 (result) => {
