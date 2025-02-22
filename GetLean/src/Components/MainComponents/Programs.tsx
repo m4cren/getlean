@@ -13,7 +13,7 @@ const Programs = () => {
     return (
         <>
             <div className={style['container-desktop']}>
-                <div className={style['line']}>
+                <div className={style['line']} id={style['upper-line']}>
                     <Card
                         imgLink="/images/cat.jpg"
                         title="Project Cat"
@@ -27,7 +27,7 @@ const Programs = () => {
                         content="A training methodology that combines different types of fitness disciplines such as strength training, endurance training, and mobility work, to develop a well-rounded athletic ability. The goal is to achieve lean physique and to improve multiple physical attributes simultaneously rather than specializing in just one. Think you can do it all? Hybrid training is for you."
                     />
                 </div>
-                <div className={style['line']}>
+                <div className={style['line']} id={style['lower-line']}>
                     <Card
                         imgLink="/images/gorilla.jpg"
                         title="Project Gorilla"
@@ -45,7 +45,10 @@ const Programs = () => {
 
             {isCard && (
                 <div className={style['container-phone']}>
-                    <div className={style['line-phone']}>
+                    <div
+                        className={style['line-phone']}
+                        id={style['upper-line']}
+                    >
                         <div
                             className="card-phone-container"
                             onClick={() => {
@@ -73,7 +76,10 @@ const Programs = () => {
                             />
                         </div>
                     </div>
-                    <div className={style['line-phone']}>
+                    <div
+                        className={style['line-phone']}
+                        id={style['lower-line']}
+                    >
                         <div
                             className="card-phone-container"
                             onClick={() => {

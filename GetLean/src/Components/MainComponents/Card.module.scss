@@ -1,14 +1,11 @@
 .card-container {
-    width: 20vw;
-    height: 20vw;
+    width: 16vw;
+    height: 16vw;
     transform-style: preserve-3d;
     transition: transform 0.6s;
     position: relative;
     perspective: 1000;
 
-    @media (max-width: 1450px) {
-        width: 25%;
-    }
     @media (max-width: 900px) {
         width: 30%;
     }
