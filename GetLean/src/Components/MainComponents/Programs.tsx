@@ -84,7 +84,7 @@ const Programs = () => {
                             <CardPhone
                                 imgLink="/images/gorilla.jpg"
                                 title="Project Gorilla"
-                                caption='Dm "cheetah" to avail '
+                                caption='Dm "gorilla" to avail '
                             />
                         </div>
                         <div
