@@ -3,7 +3,7 @@ import { FaHome } from 'react-icons/fa';
 import { IoIosInformationCircle } from 'react-icons/io';
 import { AiFillProduct } from 'react-icons/ai';
 import { BsPeopleFill } from 'react-icons/bs';
-import { SetStateAction, useState } from 'react';
+import { SetStateAction } from 'react';
 import { Dispatch } from 'react';
 
 interface Props {

@@ -15,8 +15,13 @@
     position: relative;
 
     h1 {
-        font-size: clamp(1rem, 0.9rem, 0.8rem);
+        font-size: clamp(0.9rem, 0.8rem, 0.7rem);
         height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
     }
 
     p {
