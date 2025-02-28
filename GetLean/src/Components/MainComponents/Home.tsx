@@ -65,7 +65,7 @@ const Home = () => {
                             <span>
                                 <FaFacebook />
                             </span>
-                            <p>Rovict Daniel Balagtas</p>
+                            <p>Rovict Danielle Balagtas</p>
                         </a>
                     </li>
                 </ul>
