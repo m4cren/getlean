@@ -1,6 +1,7 @@
-**Get Lean**
--Stay in shape with Rovict Balagtas
--Stay lean Stay healthy folks
+**Get Lean** </br>
+-Stay in shape with Rovict Balagtas</br>
+-Stay lean Stay healthy folks</br>
+
 
 An informational website that I made for my comrade.
 
