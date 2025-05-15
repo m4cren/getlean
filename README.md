@@ -1,5 +1,5 @@
 #Get Lean </br>
--Stay in shape with Rovict Balagtas</br>
+-Stay in shape with <strong>Rovict Balagtas</strong></br>
 -Stay lean Stay healthy folks</br>
 
 
